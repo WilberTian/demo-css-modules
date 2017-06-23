@@ -1,0 +1,23 @@
+.wrapper {
+  margin: 16px;
+  border: 2px solid #f63;
+  padding: 10px;
+  width: 400px;
+}
+
+.text {
+  color: #777;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.wrapper :global .text {
+  color: brown;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.textCenter {
+  composes: text;
+  composes: tCenter from './common.css';
+}
